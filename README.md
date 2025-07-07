@@ -17,7 +17,7 @@ A modern, clean resume template built with [Typst](https://typst.app/) that inte
 1. **Clone the repository**
    ```bash
    git clone https://github.com/fruggiero/typst-jsonresume-cv.git
-   cd cv
+   cd typst-jsonresume-cv
    ```
 
 2. **Install dependencies** (optional, for automation)
