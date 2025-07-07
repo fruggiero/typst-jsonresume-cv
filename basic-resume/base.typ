@@ -162,7 +162,7 @@
           contact-item(personal-site, link-type: "https://"),
           contact-item(orcid, prefix: [#orcid-icon(color: rgb("#AECD54"))orcid.org/], link-type: "https://orcid.org/"),
         )
-        items.filter(x => x != none).join(" | ")
+        items.filter(x => x != none and x != "").map(x => box(x)).join(" | ")
       }
     ],
   )
