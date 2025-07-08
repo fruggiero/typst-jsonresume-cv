@@ -2,6 +2,8 @@
 
 A modern, clean resume template built with [Typst](https://typst.app/) that integrates seamlessly with the [JsonResume](https://jsonresume.org/) standard. This template is based on the excellent [basic-typst-resume-template](https://github.com/stuxf/basic-typst-resume-template) by stuxf, enhanced with JsonResume compatibility and multilingual support.
 
+[![Resume Preview](preview-image.png)](full-image.jpg)
+
 ## ✨ Features
 
 - **JsonResume Integration**: Uses the standard JsonResume format for data

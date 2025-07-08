@@ -43,6 +43,36 @@
         "Successfully won Techcrunch Disrupt",
         "Optimized an algorithm that holds the current world record for Weisman Scores"
       ]
+    },
+    {
+      "name": "Hooli",
+      "location": "Mountain View, CA",
+      "description": "Large technology company",
+      "position": "Software Engineer",
+      "url": "http://hooli.example.com",
+      "startDate": "2012-06-01",
+      "endDate": "2013-11-30",
+      "summary": "Worked on the Nucleus project, focusing on scalable distributed systems and cloud infrastructure.",
+      "highlights": [
+        "Contributed to the development of Hooli's core cloud platform",
+        "Improved system reliability and scalability",
+        "Collaborated with cross-functional teams to deliver new features"
+      ]
+    },
+    {
+      "name": "Stanford University",
+      "location": "Stanford, CA",
+      "description": "Academic research position",
+      "position": "Research Assistant",
+      "url": "http://stanford.example.com",
+      "startDate": "2011-09-01",
+      "endDate": "2012-05-31",
+      "summary": "Assisted in research on information theory and data compression algorithms.",
+      "highlights": [
+        "Published a paper on adaptive compression techniques",
+        "Presented findings at an international conference",
+        "Developed simulation tools for research projects"
+      ]
     }
   ],
   "volunteer": [
