@@ -12,13 +12,19 @@
 ]
 
 #let getMonthNames(lang) = {
-  if lang == "it" {
+  if lang == "de" {
+    return (
+      "01": "Jan", "02": "Feb", "03": "Mär", "04": "Apr", 
+      "05": "Mai", "06": "Jun", "07": "Jul", "08": "Aug", 
+      "09": "Sep", "10": "Okt", "11": "Nov", "12": "Dez"
+    )
+  } else if lang == "it" {
     return (
       "01": "Gen", "02": "Feb", "03": "Mar", "04": "Apr", 
       "05": "Mag", "06": "Giu", "07": "Lug", "08": "Ago", 
       "09": "Set", "10": "Ott", "11": "Nov", "12": "Dic"
     )
-  } else {
+  } else { // English as default
     return (
       "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", 
       "05": "May", "06": "Jun", "07": "Jul", "08": "Aug", 
@@ -28,16 +34,16 @@
 }
 
 #let section_titles = (
-  work: (it: upper("Esperienza Lavorativa"), en: upper("Work Experience")),
-  education: (it: upper("Istruzione"), en: upper("Education")),
-  projects: (it: upper("Progetti"), en: upper("Projects")),
-  skills: (it: "Competenze", en: "Skills"),
-  interests: (it: "Interessi", en: "Interests"),
-  certifications: (it: "Certificazioni", en: "Certifications"),
-  extra: (it: upper("Attività Extracurriculari"), en: upper("Extracurriculars")),
-  languages: (it: upper("Lingue"), en: upper("Languages")),
-  actual: (it: "Attuale", en: "Present"),
-  conjunction_word: (it: upper("e"), en: upper("&")),
+  work: (de: upper("Berufserfahrung"), it: upper("Esperienza Lavorativa"), en: upper("Work Experience")),
+  education: (de: upper("Bildungsweg"), it: upper("Istruzione"), en: upper("Education")),
+  projects: (de: upper("Projekte"), it: upper("Progetti"), en: upper("Projects")),
+  skills: (de: upper("Kenntnisse"), it: "Competenze", en: "Skills"),
+  interests: (de: upper("Interessen"), it: "Interessi", en: "Interests"),
+  certifications: (de: upper("Zertifikate"), it: "Certificazioni", en: "Certifications"),
+  extra: (de: upper("Wahlfächer"), it: upper("Attività Extracurriculari"), en: upper("Extracurriculars")),
+  languages: (de: upper("Sprachen"), it: upper("Lingue"), en: upper("Languages")),
+  actual: (de: upper("Aktuell"), it: "Attuale", en: "Present"),
+  conjunction_word: (de: upper("und"), it: upper("e"), en: upper("&")),
 )
 
 #let get_section_title(section, lang) = section_titles.at(section).at(lang, default: section)
